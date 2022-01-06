@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Self</title>
+</head>
+<style>
+   
+.header{   
+   height: 600px;
+   /* perfect height for page is 600px */
+   /* width: 1250px; */
+    background-size: cover;    
+    background-repeat:no-repeat;
+    background: url(wooden.jpg) ;    
+}
+.portfolio{
+    font-size: 50px;
+    margin-left: 50px;
+    color: white;
+    display: inline-block;
+    border: 3px solid red;
+    padding: 10px;
+}
+.menu{
+    display: inline-block;
+}
+
+.menu a{
+color: white;
+text-decoration: none;
+padding: 10px 20px;
+margin: 3px;
+font-size: 20px;
+display: inline-block;
+border: 3px solid green;
+}
+.nav{
+    width: 100%;
+    height: 70px;
+    display: inline-block;
+    margin-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .portfolio a{
+font-size: 30px;
+margin-left: 50px;
+border: 3px blue;
+} */
+</style>
+<body>
+    
+    <header class="header">
+       <nav>
+    
+        <div class="portfolio">
+            Start
+        </div>
+        <div class="menu">
+            <a href="#">   1   </a>
+            <a href="#">   2   </a>
+            <a href="#">   3   </a>
+            <a href="#">   4   </a>
+            <a href="#">   5   </a>
+        </div>
+    </nav>
+    <p> 
+    </p>
+      </header>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+   <!-- <div class="about-row">
+            <div class="about-left-col">
+                <img src="hacker.jpg" alt="">
+                <img src="market.jpg" alt="">
+                <img src="programmer.jpg" alt="">
+            </div>
+            <div class="about-right-col">
+               <p class="para">I am Ansh Mishra😎</p>  
+                
+            </div>
+            <div class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem commodi a modi sunt? Nam explicabo libero aperiam esse excepturi? Praesentium, architecto perferendis a non exercitationem distinctio incidunt molestiae aut culpa aperiam veniam. Cupiditate nam delectus quaerat recusandae explicabo placeat voluptatibus esse quam error possimus maxime molestias quod officiis, commodi quo provident, unde aliquid repudiandae accusamus sapiente iusto. Cupiditate illo ratione totam quis dignissimos commodi qui tempora sint ipsam, consectetur at! Culpa odio quis porro quae error! Similique soluta cumque quos provident eum accusantium sit id ipsam perspiciatis, atque voluptate, recusandae porro quia cum earum nihil maxime reiciendis omnis repellendus.</div>
+        </div> -->
+
+
+        .about-row{
+            display: flex;   
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* flex-basis: 50%; */
+        }
+    .about-left-col{
+        flex-basis: 100%;
+        /* border: 3px solid red; */
+        display: flex;
+         } 
+    .about-left-col img{
+        width: 35%;
+        padding: 0px;
+        
+        display: inline-block;  
+        border-radius: 10%; 
+        /* margin-right: 200px; */
+    }
+    .about-right-col{
+        /* flex-basis: 50%; */
+        line-height: 0;
+        display: flex;
+        /* border: 3px solid red;    */
+        margin-bottom: 70px;
+        display: inline-block; 
+         } 
+    
+    .para{
+        line-height: 5;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .para2{
+        /* flex-basis: 50%; */
+        margin-top: -100px;
+        background-color: rgba(0,0,0,0.7);
+       color: white;
+        font-size: 20px;
+    }

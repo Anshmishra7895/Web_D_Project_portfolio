@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\ANSH MISHRA\Documents\vs code\.vscode\Web D Project 2👦🏻😎\p2.css">
+    <title>Project 2 by Ansh Mishra</title>
+    <script src="first.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="typed.min.js"></script>
+</head>
+
+<style>
+    body{
+        overflow-x: hidden;
+    }
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(wood.jpg);
+    background-size: cover;
+    /* clip-path: polygon(50% 0%, 100% 0, 87% 84%, 50% 100%, 14% 85%, 0 0); */
+    clip-path: polygon(52% 0, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0) ;
+    /* background-color: black; */
+    background-attachment: fixed;
+    
+}
+.portfolio{
+    color: white;
+    font-size: 50px;
+padding-left: 70px;
+font-weight: bold;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+   margin: 5px;
+   font-size: 22px;
+   font-weight: bold;
+}
+.menu a:hover{
+    background-color: orange;
+    color: black;
+    
+}
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+span{
+    color: orange;
+}
+.intro{
+    color: white;
+    margin-top: 100px;
+    margin-left: 120px;
+    max-width: 450px;
+    /* margin: -30px; */
+    padding: 0px;
+    line-height: 10px;
+}
+.intro h2{
+    font-size: 50px;
+}
+.intro p{
+    font-size: 20px;
+}
+#about{
+    padding: 40px 50px;
+    /* display:  flex; */
+}
+.aboutus {
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    line-height: 4px;
+    color: orange;
+    /* display: flex ; */
+}
+.aboutus h1{
+    font-size: 50px;
+color: black;
+}
+.about p{
+font-size: 50px;
+color: orange;
+}
+.aboutrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: grey;
+    color: white;
+    padding: 50px;
+}
+.about-left-col{
+    flex-basis: 50%;
+    text-align: justify;
+    font-size: 20px;
+}
+.about-right-col{
+    flex-basis: 50%;
+    color: black;
+}
+
+#skill{
+    padding: 100px 50px;
+    background: url(whitemountain.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.skill-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(45, 52, 54);
+    color: white;
+    padding: 50px;
+}
+
+.skill-col-left{
+    flex-basis: 50%;
+    text-align: justify;
+    font-size: 20px;
+}
+.skill-col-right{
+    flex-basis: 50%;
+}
+progress{
+    width: 80%;
+}
+.progress{
+    width: 70%;
+    margin: auto;    
+}
+progress p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 100px;
+    text-align: justify;
+}
+#service{
+     padding: 100px 50px;
+}
+.servicerow{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.servicebox{
+    flex-basis: 25%;
+    text-align: center;
+    box-shadow: 3px 4px 6px gray;
+    padding: 20px;
+}
+.servicebox:hover{
+    background: orange;
+    color: white;
+    transition: .1;
+}
+.contact{
+    padding: 100px 50px;
+    
+}
+.contactrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-left-col{
+    flex-basis: 50%;
+}
+.contact-right-col{
+    flex-basis: 50%;
+    display: flex;
+    margin-right: -150px;
+
+}
+.contact-right-col form{
+    text-align: center;
+}
+.contact-right-col form h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.contact-right-col form input{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.contact-right-col form textarea{
+    width: 95%;
+}
+.contact-right-col button{
+    background: orange;
+    color: black;
+    width :20%;
+    height: 7%;
+    /* padding: 10px; */
+}
+.contact-right-col button:hover{
+    background: black;
+    color: white;
+}
+#footer{
+    background: orange;
+    color: black;
+    justify-content: space-around;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 60px;
+}
+@media screen and (max-width:770px) {
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        background-size: cover;        
+    }
+    .menu a{
+        display: none;
+    }
+    .intro{
+        margin-left: 50px;
+    }
+    .portfolio{
+        padding:30px;
+    }
+    .about-left-col{
+    flex-basis: 100%;
+    text-align: justify;
+    font-size: 20px;
+}
+.about-right-col{
+    flex-basis: 100%;
+    color: black;
+}
+.skill-col-left{
+    flex-basis: 100%;
+    text-align: justify;
+    font-size: 20px;
+}
+.skill-col-right{
+    flex-basis: 100%;
+}
+.servicebox{
+    flex-basis: 65%;
+    text-align: center;
+    box-shadow: 3px 4px 6px gray;
+    padding: 20px;
+}
+.contact-left-col{
+    flex-basis: 50%;
+}
+.contact-right-col{
+    flex-basis: 100%;
+    display: flex;
+    margin-right: -150px;
+}
+}
+</style>
+
+<body>
+<header>
+    <nav>
+        <div class="portfolio">PORTFO<span>LIO</span></div>
+        <div class="menu">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Skills</a>
+            <a href="">Services</a>
+            <a href="">Contact Us</a>
+        </div>
+    </nav>
+<div class="intro">
+    <p>Hy Guys This is</p>
+    <h1>Ansh Mishra</h1>
+    <p class="ansh">I am a Front End Developer<span id="type" style="color: orange;"></span></p>
+</div>
+</header>
+
+<section id="about">
+<div class="aboutus">
+    <h1>About</h1>
+    <p>Who I am❔</p>
+</div>     
+                <div class="aboutrow">
+                    <div class="about-left-col">
+                        <img src="programmer.jpg" alt="" width="400px">
+                    </div>
+                    <div class="about-right-col">
+                        <h2>I am Ansh Mishra</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit incidunt facilis perferendis nam perspiciatis, odio consequatur nesciunt iusto temporibus non ducimus. Ea hic possimus cumque dolorem repellat accusantium, nobis explicabo neque adipisci rem nisi velit vel, perferendis magnam fuga, vero voluptate! Ex, qui suscipit aut iste deleniti ullam nam nisi architecto numquam provident harum a hic nesciunt dolores. Magnam veniam perspiciatis excepturi dolores minus! Error possimus pariatur sapiente in saepe harum sequi beatae, incidunt modi, blanditiis necessitatibus voluptatum perspiciatis assumenda animi rem aspernatur explicabo repellendus itaque accusamus. Ab veniam aspernatur, error eaque facere nostrum quisquam! Tempore ut sequi vel minus?
+                        </p>
+                    </div>
+                </div>
+</section>
+
+<section id="skill">
+    <div class="aboutus">
+        <h1>Skill</h1>
+        <p style="color:black" >My skills are</p>
+    </div>
+
+    <div class="skill-row">
+        <div class="skill-col-left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quam nihil nobis aut nulla autem architecto neque voluptatibus temporibus veritatis alias consequuntur quibusdam ratione optio, officia, tempore impedit quos sed, mollitia modi consequatur ex nisi? Placeat, a? Tenetur eligendi placeat vitae nesciunt. Sed accusantium qui delectus, labore eius rem! Nisi dicta maxime tempora enim molestias rem rerum quisquam minus ab minima. Inventore porro eligendi quisquam praesentium velit minus sit rerum fuga ipsa autem. Tempore placeat, ratione neque maxime iure, suscipit facilis modi eius deleniti voluptas quibusdam cumque voluptate odit excepturi. Mollitia illo asperiores molestiae quod magnam dignissimos perferendis animi veritatis?</p>
+        </div>
+        <div class="skill-col-right">
+            <div class="progress">
+                <p>
+                <span>HTML</span>  <br>
+                <progress value="90" max="100"></progress>
+                <span>90%</span>
+                </p>
+                <p>
+                <span>CSS</span> <br>
+                <progress value="70" max="100"></progress>
+                <span>70%</span> 
+                </p>
+                <p>
+                <span>Python</span> <br>
+                <progress value="40" max="100"></progress>
+                <span>40%</span>
+                </p>
+                <p>
+                <span>Stock Market</span> <br>
+                <progress value="80" max="100"></progress>
+                <span>80%</span>
+                </p>
+                <p>
+                <span>Hacking</span> <br>
+                <progress value="30" max="100"></progress>
+                <span>30%</span>
+                </p>   
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="service">
+    <div class="aboutus">
+        <h1>Services</h1>
+        <p>Services that we provide</p>
+    </div>
+        <div class="servicerow">
+            <div class="servicebox" data-tilt>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis earum corporis repudiandae alias, ipsum nostrum a odit eius at blanditiis iusto voluptatum? Aliquam, esse.</p>
+            </div>
+            <div class="servicebox" data-tilt>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis earum corporis repudiandae alias, ipsum nostrum a odit eius at blanditiis iusto voluptatum? Aliquam, esse.</p>
+            </div>
+            <div class="servicebox" data-tilt>
+                <h2>Logo Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis earum corporis repudiandae alias, ipsum nostrum a odit eius at blanditiis iusto voluptatum? Aliquam, esse.</p>
+            </div>
+            <div class="servicebox" data-tilt>
+                <h2>QR Code Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis earum corporis repudiandae alias, ipsum nostrum a odit eius at blanditiis iusto voluptatum? Aliquam, esse.</p>
+            </div>
+            <div class="servicebox" data-tilt>
+                <h2>Market Analysis</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis earum corporis repudiandae alias, ipsum nostrum a odit eius at blanditiis iusto voluptatum? Aliquam, esse.</p>
+            </div>
+            <div class="servicebox" data-tilt>
+                <h2>Trading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis earum corporis repudiandae alias, ipsum nostrum a odit eius at blanditiis iusto voluptatum? Aliquam, esse.</p>
+            </div>
+        </div>
+</section>
+
+<section id="contact">
+    <div class="aboutus">
+        <h1>Get in Touch</h1>
+        <p>We are Available for you</p>
+    </div>
+    <div class="contactrow">
+        <div class="contact-left-col">
+           <div class="email">
+              <a href="mailto: ansh2003mishra@gmail.com" style="text-decoration: none; color: black;"> <h2 style="font-size: 35px; line-height: 30px;" >📩E-mail</h2></a>
+
+               <p style="font-size: 18px;">ansh2003mishra@gmail.com</p>
+
+               <a href="tel:+91 7895484307" style="text-decoration: none; color: black ;"> <h2 style="font-size: 35px; line-height: 30px;">📞Phone</h2></a>
+
+               <p style="font-size: 18px;">7895484307</p>
+
+              <a href="https://goo.gl/maps/4ZRSN8cJt1A86Gxh9" style="text-decoration: none; color: black;"> <h2 style="font-size: 35px; line-height: 30px;">🏠Address</h2></a>
+
+               <p style="font-size: 18px;">Sahawar Gate , Near Railway Station , Kasganj</p>
+
+           </div> 
+        </div>
+        <div class="contact-right-col">
+            <form action="">
+                <h2>Contact Us</h2>
+                <input type="text" name="" placeholder="name"> <br>
+                <input type="E-mail" name="" placeholder="E-mail"> <br>
+                <textarea name="" id="" cols="40" rows="10" placeholder="Message"></textarea> <br>
+                <button class="button">Submit</button>
+            </form>
+        </div> 
+    </div>
+</section>
+
+<section id="footer">
+<h2>Website Design and Developed by Ansh Mishra | All rights are reserved © ® </h2>
+
+</section>
+
+            <script src="jquery.ripples-min.js"></script>
+
+            <script>
+                jQuery(document).ready(function(){
+                    $(header).ripples({
+  dropRadius: 20,
+  perturbance: 0.03,  
+});
+                });
+
+                
+            </script>
+
+
+                <script>
+                    let animate= new typed('.ansh',{
+                        strings:["Front End Developer","Blogger"],
+                        typedspeed:100,
+                        backspeed:100,
+                        loop:true,
+                    })
+                </script>
+<script src="tilt.jquery.min.js"></script>
+</body>
+</html>
